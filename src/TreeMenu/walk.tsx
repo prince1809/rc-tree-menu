@@ -67,3 +67,7 @@ const validateData = (data: Data | undefined): boolean =>
   !!data && !isEmpty(data);
 const getValidatedData = (data: Data | undefined) =>
   validateData(data) ? (data as Data) : [];
+
+const walk = ({ data, ...props }: WalkProps): Item[] => {};
+
+export default memoize(walk);
