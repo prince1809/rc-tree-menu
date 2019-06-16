@@ -6,4 +6,6 @@ type TreeMenuProps = {
 
 type TreeMenuState = {};
 
-class TreeMenu extends React.Component<TreeMenuProps, TreeMenuState> {}
+class TreeMenu extends React.Component<TreeMenuProps, TreeMenuState> {
+  static defaultProps: TreeMenuProps = {};
+}
